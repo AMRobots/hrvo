@@ -1,0 +1,6 @@
+<!-- -->
+<launch>
+    <node name="animated_marker_publisher_hrvo" type="animated_walking_man.py" pkg="hrvo"/>
+
+    <node name="rviz" type="rviz" pkg="rviz" output="screen" args="-d $(find hrvo)/rviz/hrvo_animation.rviz"/>
+</launch>

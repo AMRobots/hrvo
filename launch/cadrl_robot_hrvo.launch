@@ -1,0 +1,11 @@
+<!--  -->
+<launch>
+	<!-- 
+	<node pkg="tf" type="static_transform_publisher" name="robot_world" args="0 0 0 0 0 0 1  /world /base_footprint  100"/> -->
+ 
+	<node name="cadrl_hrvo" pkg="hrvo" type="cadrl_hrvo" output="screen"/>
+	<node name="cadrl_robot" pkg="hrvo" type="cadrl_robot" output="screen"/>	
+	<!--node name="rviz" pkg="rviz" type="rviz" args="-d $(find hrvo)/rviz/hrvo.rviz" /--> 
+	
+
+</launch>
